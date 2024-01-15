@@ -1,0 +1,7 @@
+.homepage{
+    padding: 1%;
+    background-image: url("../resources/background.png");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 725px;
+}

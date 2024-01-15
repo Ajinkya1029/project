@@ -1,0 +1,57 @@
+.navbar{
+text-align: center;
+}
+.goalpost{
+    height: 100px;
+    width: 200px;
+}
+.lowernav{
+    padding-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+.footernav{
+    padding-top: 8%;
+    text-align: center;
+}
+
+.leftgoal{
+    animation: moveLeft 3s linear;
+}
+.rightgoal{
+    animation: moveReft 3s linear;
+}
+@keyframes moveLeft {
+    0% {
+      transform: translate(0, 0) rotate(0);
+    }
+    25% {
+      transform: translate(-100px, -50px) rotate(90deg);
+    }
+    50% {
+      transform: translate(-200px, -100px) rotate(180deg);
+    }
+    75% {
+      transform: translate(-300px, -150px) rotate(270deg);
+    }
+    100% {
+      transform: translate(-380px, -220px) rotate(360deg);
+    }
+  }
+  @keyframes moveReft {
+    0% {
+      transform: translate(0, 0) rotate(0);
+    }
+    25% {
+      transform: translate(100px, -50px) rotate(90deg);
+    }
+    50% {
+      transform: translate(200px, -100px) rotate(180deg);
+    }
+    75% {
+      transform: translate(300px, -150px) rotate(270deg);
+    }
+    100% {
+      transform: translate(380px, -220px) rotate(360deg);
+    }
+  }
