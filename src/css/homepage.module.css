@@ -5,3 +5,15 @@
     background-size: cover;
     height: 725px;
 }
+.right{
+    background-color: aqua;
+    height: 760px;
+    overflow: hidden;
+}
+.yesno{
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 20%;
+    display: flex;
+    justify-content: space-between;
+}

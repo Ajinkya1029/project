@@ -32,7 +32,7 @@ function NavBar(){
             setIsClicked(true);
             setTimeout(()=>{
                 setIsClicked(false);
-                window.open("https://codefrontend.com/reactjs-redirect-to-url/");
+                window.open("https://www.youtube.com");
                         },1000);
                         setAnimateClass(`${styles.centergoal}`);
         }

@@ -22,7 +22,7 @@ const router=createBrowserRouter([
     },
     {
         path:'rightgoal',
-        element:<YesNoDiv></YesNoDiv>
+        element:<YesNoDiv/>
     }
 
 ]);
