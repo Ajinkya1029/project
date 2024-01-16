@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "../css/navbar.module.css";
 import goalPost from "../resources/goalpost.png";
 import footballer from "../resources/footballer.png";
 import football from "../resources/football.png";
 
 function NavBar(){
+    const navigate=useNavigate();
 
  const [isClicked,setIsClicked]=useState(false);
  const [animation,setAnimateClass]=useState('');
@@ -16,14 +18,23 @@ function NavBar(){
             setIsClicked(true);
             setTimeout(()=>{
                 setIsClicked(false);
-                        },3000);
+                navigate("/leftgoal");
+                        },1000);
         setAnimateClass(`${styles.leftgoal}`);
         }else if(position==='right'){
             setIsClicked(true);
             setTimeout(()=>{
                 setIsClicked(false);
-            },3000);
+                navigate("/rightgoal");
+            },1000);
             setAnimateClass(`${styles.rightgoal}`);
+        }else{
+            setIsClicked(true);
+            setTimeout(()=>{
+                setIsClicked(false);
+                window.open("https://codefrontend.com/reactjs-redirect-to-url/");
+                        },1000);
+                        setAnimateClass(`${styles.centergoal}`);
         }
     }
       
@@ -40,5 +51,3 @@ function NavBar(){
 </div>
 }
 export default NavBar;
-
-
